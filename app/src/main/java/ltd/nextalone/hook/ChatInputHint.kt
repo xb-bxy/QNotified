@@ -34,10 +34,8 @@ import ltd.nextalone.util.hookAfter
 import ltd.nextalone.util.putDefault
 import ltd.nextalone.util.tryOrFalse
 import me.kyuubiran.util.getDefaultCfg
-import me.singleneuron.hook.ForceSystemFile
 import me.singleneuron.qn_kernel.annotation.UiItem
 import me.singleneuron.qn_kernel.base.CommonDelayAbleHookBridge
-import me.singleneuron.qn_kernel.ui.base.UiDescription
 import nil.nadph.qnotified.base.annotation.FunctionEntry
 import nil.nadph.qnotified.ui.CustomDialog
 import nil.nadph.qnotified.ui.ViewBuilder
@@ -48,7 +46,7 @@ import nil.nadph.qnotified.util.Utils
 
 @FunctionEntry
 @UiItem
-object ChatInputHint : CommonDelayAbleHookBridge("na_chat_input_hint") {
+object ChatInputHint : CommonDelayAbleHookBridge() {
     private const val strCfg = "na_chat_input_hint_str"
     override fun initOnce(): Boolean = tryOrFalse {
         DexKit.doFindMethod(DexKit.N_BASE_CHAT_PIE__INIT)?.hookAfter(this) {
@@ -65,7 +63,7 @@ object ChatInputHint : CommonDelayAbleHookBridge("na_chat_input_hint") {
         }
     }
 
-    override val preference: UiDescription = ForceSystemFile.uiSwitchPreference {
+    override val preference = uiSwitchPreference {
         title = "输入框增加提示"
     }
 
