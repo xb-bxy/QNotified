@@ -147,6 +147,8 @@ QNotified的版本号组成为`x.y.z.w`，正常情况下`x`位将一直保持�
 
 ## 开始贡献
 
+
+
 - [CONTRIBUTING](https://github.com/ferredoxin/QNotified/blob/master/CONTRIBUTING.md)
 
 ## 赞助
