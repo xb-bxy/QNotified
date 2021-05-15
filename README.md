@@ -1,15 +1,12 @@
 # QNotified
 
 ![QNotified logo](https://raw.githubusercontent.com/ferredoxin/QNotified/master/docs/title.png)
-
 ---
-
 [![Build Status](https://dev.azure.com/Cryolitia/QNotified/_apis/build/status/ferredoxin.QNotified?branchName=master)](https://dev.azure.com/Cryolitia/QNotified/_build/latest?definitionId=1&branchName=master)
 [![license](https://img.shields.io/github/license/ferredoxin/QNotified.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![GitHub release](https://img.shields.io/github/release/ferredoxin/QNotified.svg)](https://github.com/ferredoxin/QNotified/releases/latest)
 
 QNotified 是一个旨在使QQ变得更好用的开源Xposed模块
-
 **[持续集成版本下载](https://install.appcenter.ms/orgs/qnotifieddev/apps/qnotified/distribution_groups/alpha)**
 
 ## 使用方法
